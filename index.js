@@ -125,3 +125,5 @@ $('.load-currencies').click(loadCurrencies);
 
 $('.load-countries').click(loadCountries);
 
+
+
