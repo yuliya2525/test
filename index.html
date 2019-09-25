@@ -1,29 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Test 1</title>
-  </head>
-  <body>
-    <header>
-      </header>
-    <form action="send.php">
-            <div>
-            <label>1. First name and last name:</label>
-              <br>
-              <br>
-            <input type="text" required> <br>
-              <br>
-              <label>2. Email:</label>
-              <br>
-              <br>
-              <input type="email" name="email" required placeholder=>
-              <br>
-              <br>
-              <label>3. Age:</label>
-              <br>
-              <br>
-              <input type="number" name="age">
-              <br>
-  </body>
+<html lang="en" style="min-height: 100%; height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            min-height: 100%;
+            height: 100%;
+        }
+        td {
+            padding: 5px;
+        }
+        img {
+            max-height: 200px;
+        }
+        .remove-btn {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form id="submitForm">
+            <input type="text" id="firstName" placeholder="Enter first name ...">
+            <input type="text" id="email" placeholder="Enter email ...">
+            <input type="number" min="0" max="100" id="age" placeholder="Enter age...">
+            <input type="text" id="picture" placeholder="Enter picture url ...">
+            <br>
+            <br>
+            <button id="submitBtn" type="submit">Submit</button>
+            <br><br>
+        </form>
+
+        <table border="1" class="users-table">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Username:</td>
+                    <td>Email:</td>
+                    <td>Age</td>
+                    <td>Picture</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <br><br>
+        <button class="load-currencies">Load Currencies</button>
+        <table border="1" class="currencies">
+            <thead>
+            <tr>
+                <td>#</td>
+                <td>Код:</td>
+                <td>Валюта:</td>
+                <td>Курс:</td>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <br><br>
+        <button class="load-countries">Load Countries</button>
+        <table border="1" class="countries">
+            <thead>
+            <tr>
+                <td>Название страны</td>
+                <td>Язык</td>
+                <td>Регион</td>
+                <td>Численность</td>
+                <td>Площадь</td>
+                <td>Столица</td>
+                <td>Соседи</td>
+                <td>Валюты</td>
+                <td>Флаг</td>
+                
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
 </html>
